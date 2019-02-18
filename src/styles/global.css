@@ -1,0 +1,81 @@
+
+html body {
+  font-family: "Helvetica","Pingfang SC","Hiragino Sans GB","Microsoft YaHei","sans-serif";
+  background-color: #ddd;
+}
+.clearfix {clear: both;}
+.clearfix:after {content: '';display: block; clear: both;}
+a {text-decoration: none}
+
+/* ------ */
+
+.paginationBox {
+  display: flex;
+  background-color: #fafafa;
+}
+.paginationBox a {color: #2ca6cb}
+.paginationBox .previousLink:hover,.nextLink:hover { background-color: #ccc;color: #db4437 }
+.paginationBox .previousLink,.nextLink {
+  display: inline-block;
+  padding: .5rem .8rem;
+}
+
+.paginationBox .pageItem:hover {
+  background-color: #ccc;
+  color: #db4437;
+}
+.paginationBox .pageItem {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+}
+.paginationBox .pageItem.active:hover, {color: #db4437; background-color: initial}
+.pageItem.static:hover {color: initial; background-color: initial}
+.paginationBox .pageItem.active {
+  color: #db4437;
+}
+
+.paginationBox .pageLink {
+  text-align: center;
+  flex: 1;
+}
+
+
+/* 文章详情 */
+.article {
+  background-color: #fafafa;  
+}
+.article header {border-bottom: 1px solid #dbdbdb;     border-left: 5px solid #db4437;}
+.article header a {color: #2ca6cb;}
+.article h1 {
+  font-size: 180%;  
+  line-height: 1.8;
+  padding: 0.3rem 3%;
+  /* border-left: 5px solid #db4437; */
+}
+.article-author,.article-time {
+  float: right;
+  color: #817c7c;
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+p.article-author {  
+  border-bottom: none;
+  padding-right: 2%;
+}
+.article-author a { margin-left: .2rem;}
+.article-time {
+  margin-right: 1em;
+  padding-top: 0.1em;
+  font-size: 0.9em;
+}
+.article-content {
+  padding: 1rem 1.5rem;
+}
+
+/* formater */
+
+.article-content a  { color: #2ca6cb }
+.article-content p  { color: #817c7c; font-size: 100%; line-height: 1.7; }
+.article-content table { width: 100%; font-size: .9rem; }
+
+/* 文章详情 end */

@@ -1,0 +1,72 @@
+.header {
+  width: 100%;
+  box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+  background: #db4437;
+  background: url("./aws-bg.jpg");
+  padding: 2em 0 1em;
+  color: #fff;
+  overflow: hidden;
+}
+.header a {
+  color: #fff;
+}
+.header > div {
+  width: 85%;
+  margin: auto;
+}
+
+
+.imglogo {
+  float: left;
+}
+
+.imglogo img {
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+.textlogo {
+  float: left;
+  width: 80%;
+  margin-left: 1rem;
+}
+.textlogo h1 {
+  font-family: "covered_by_your_graceregular";
+}
+.textlogo h2 {
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+.nav ul {
+  margin-top: 1.45rem;
+  margin-bottom: 0;
+  float: right;
+  list-style: none;
+}
+.nav ul li {
+  float: left;
+  font-size: 1.2rem;
+}
+.nav a {
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+}
+.nav a:hover {
+  background: #b52518;
+  color: #e9cd4c;
+}
+
+.searchInput {
+  width: 8rem;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-left: 1.2rem;
+  font-size: .8rem;
+  line-height: 1;
+  outline: none;
+  padding: 0.2rem 1rem;
+  transition: 0.5s width;
+}
+.searchInput:focus { width: 12rem; }

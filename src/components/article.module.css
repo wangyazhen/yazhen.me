@@ -1,0 +1,28 @@
+.post {
+  background-color: #fafafa;
+}
+.post > a {
+  display: block;
+  color: #2ca6cb;
+  padding: 1.2rem;
+  margin-bottom: 0.15rem;
+  border-left: 0.5rem solid #ccc;
+  transition: border-left 0.3s;
+}
+.post > a:hover {
+  border-left-color: #db4437;
+}
+.post h1 {
+  color: inherit;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.post p {
+  color: #817c7c;
+}
+.post time {
+  color: #817c7c;
+  margin: 0.3rem 0;
+  font-size: 0.6rem;
+}
