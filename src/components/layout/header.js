@@ -1,17 +1,18 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import styles from './header.module.css'
-import Logo from './header_logo.png';
+import Logo from './header_logo.png'
+import config from '../../utils/config'
 
 export default () => (
   <header className={styles.header}>
     <div>
       <div className={styles.imglogo}>
-        <Link to="/"><img style={{borderRadius: '50%'}} src={Logo} alt="Drcus | 王亚振" title="Drcus | 王亚振" /></Link>
+        <Link to="/"><img style={{borderRadius: '50%'}} src={Logo} alt={config.title} title={config.title} /></Link>
       </div>
       <div className={styles.textlogo}>
-        <h1 className="site-name"><a href="/" title="Drcus | 王亚振">Drcus | 潜默</a></h1>
-        <h2 className="blog-motto">坚持做更好…………</h2>
+        <h1 className="site-name"><Link to="/">{config.title}</Link></h1>
+        <h2 className="blog-motto">{config.subtitle}</h2>
       </div>
       <div className="navbar">
         <span className="navbutton navmobile" title="菜单">
@@ -19,9 +20,7 @@ export default () => (
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li><Link to="/">主页</Link></li>
-          <li><Link to="/tags">标签</Link></li>
-          {/* <li><Link to="/image-view">Picture</Link></li> */}
+          {config.menuNavs.map(item => <li key={item.link}><Link to={item.link}>{item.title}</Link></li>)}          
           <li>
             <form className="search" action="//google.com/search" method="get" acceptCharset="utf-8">
               <input type="text" className={styles.searchInput} name="q" autoComplete="off" maxLength={20} placeholder="搜索" />
