@@ -59,6 +59,8 @@ typings/
 public
 
 src/pages/_posts/
+static/images/
+
 
 # Mac files
 .DS_Store

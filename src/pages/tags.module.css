@@ -10,7 +10,8 @@
 .itemBox:nth-child(3n) {margin-right: 0}
 .itemBox {
   width: calc((100% - .4rem) / 3 );
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: .2rem;
   margin-right: .2rem;
   padding: 2em 0 2em 3%;
