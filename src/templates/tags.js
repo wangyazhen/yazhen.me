@@ -19,14 +19,17 @@ const Tags = ({ pageContext, data }) => {
   // const tagHeader = `${totalCount} post${
   //   totalCount === 1 ? "" : "s"
   // } tagged with "${tag}"`
-  const tagHeader = `"${tag}" 标签下有${totalCount}篇文章`
+  // const tagHeader = `"${tag}" 标签下有${totalCount}篇文章`
 
   return (
     <Layout>
       <div class={styles.tagTitle}>
-        <h2><span role="img">🏷</span> {tagHeader}</h2>
+        <h2>
+          <span role="img">🏷</span>
+          "{tag}" 标签下有<b style={{color:'#db4437'}}>{totalCount}</b>篇文章
+        </h2>
       </div>
-      <div className="clearfix">
+      <div className={styles.gridBox}>
         {edges.map(({ node }) => <TagArticleItem key={node.frontmatter.path} node={node} />)}
       </div>
     </Layout>

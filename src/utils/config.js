@@ -1,7 +1,7 @@
 export default {
   // Site
   title: 'Drcus | 迪卡斯',
-  subtitle: '坚持做更好…………',
+  subtitle: '坚持做更好的',
   description: '前端开发者，利用webpack, react来开发web应用',
   keywords: 'javascript nodeJs react vuejs 前端 git webpack gulp html5 css3 hexo 王亚振 亚振 web开发 web developer',
   author: '王亚振',

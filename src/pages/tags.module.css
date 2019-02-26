@@ -2,21 +2,11 @@
 .tagTitle {
   margin: 2em 0;
   padding-left: 0.5%;
-  /* float: left; */
   padding: 2em 0 2em 3%;
   background: #fafafa;
   border-left: 0.5em solid #ccc;
 }
-.itemBox:nth-child(3n) {margin-right: 0}
-.itemBox {
-  width: calc((100% - .4rem) / 3 );
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: .2rem;
-  margin-right: .2rem;
-  padding: 2em 0 2em 3%;
-  background: #fafafa;
-}
+
 
 .tagTitle h2 {color:#2ca6cb;}
 .itemBox h1 { color: #2ca6cb; font-size: 1.2rem; }
@@ -26,4 +16,17 @@
   display: block;
   margin: 0.5em 0;
   font-size: 0.5em;
+}
+
+
+.gridBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: .2rem;
+  grid-row-gap: .2rem;
+}
+.itemBox {
+  display: flex;
+  padding: 1rem;
+  background: #fafafa;
 }

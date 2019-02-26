@@ -79,3 +79,10 @@ p.article-author {
 .article-content table { width: 100%; font-size: .9rem; }
 
 /* 文章详情 end */
+
+/* 媒体查询 自适应 */
+@media only screen and (max-width: 768px) {
+  html { font-size: 85% !important }
+  header + div { margin-top: 1.5rem !important }
+  footer { padding: 3% 1%; }
+}
