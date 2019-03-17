@@ -2,11 +2,13 @@ import React from 'react'
 import {Link} from 'gatsby'
 import styles from './header.module.css'
 import Logo from './header_logo.png'
+import Music from './music'
 import config from '../../utils/config'
 
 export default () => (
   <header className={styles.header}>
     <div>
+      <Music />
       <div className={styles.imglogo}>
         <Link to="/"><img style={{borderRadius: '50%'}} src={Logo} alt={config.title} title={config.title} /></Link>
       </div>
