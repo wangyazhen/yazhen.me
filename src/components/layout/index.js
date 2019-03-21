@@ -1,6 +1,7 @@
 import React from "react"
 import Header from './header'
 import Footer from './footer'
+import SiderBar from './siderBar'
 import Helmet from 'react-helmet'
 import config from '../../utils/config'
 
@@ -20,8 +21,14 @@ export default ({ children }) => (<>
     <link rel="dns-prefetch" href={`//${config.hostname}`} />
   </Helmet>
   <Header />
-  <div style={{ margin: `3rem auto`, maxWidth: 1050, padding: `0 1rem` }}>
-    {children}
+  <div style={{ margin: `3rem auto`, display: 'flex', maxWidth: 1350, padding: `0 1rem` }}>
+    <section style={{ flex: 1 }}>
+      {children}
+    </section>
+
+    <aside style={{ flexBasis: 280, marginLeft: 20 }}>
+      <SiderBar />
+    </aside>
   </div>
   <Footer />
 </>)
