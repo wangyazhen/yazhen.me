@@ -21,12 +21,12 @@ export default ({ children }) => (<>
     <link rel="dns-prefetch" href={`//${config.hostname}`} />
   </Helmet>
   <Header />
-  <div style={{ margin: `3rem auto`, display: 'flex', maxWidth: 1350, padding: `0 1rem` }}>
+  <div className="layout" style={{ maxWidth: 1350 }}>
     <section style={{ flex: 1 }}>
       {children}
     </section>
 
-    <aside style={{ flexBasis: 280, marginLeft: 20 }}>
+    <aside className="aside">
       <SiderBar />
     </aside>
   </div>

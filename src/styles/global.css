@@ -107,12 +107,22 @@ p.article-author {
 .article-content a  { color: #2ca6cb }
 .article-content p  { color: #817c7c; font-size: 100%; line-height: 1.7; }
 .article-content table { width: 100%; font-size: .9rem; }
-
 /* 文章详情 end */
+
+/* 布局 */
+.layout { margin: 3rem auto; display: flex;  padding: 0 1rem; }
+.aside{ flex-basis: 280px; margin-left: 20px }
+
+.footer_br { display: none; }
 
 /* 媒体查询 自适应 */
 @media only screen and (max-width: 768px) {
   html { font-size: 85% !important }
   header + div { margin-top: 1.5rem !important }
   footer { padding: 3% 1%; }
+  
+  .layout { flex-direction: column; }
+  .aside { width: 80%; margin: 2rem auto; }
+  
+  .footer_br { display: block; }
 }

@@ -8,7 +8,10 @@ export default () => {
       {/* <img src={footer_bg} alt="页脚" /> */}
       <p className={styles.copyright}>
       Powered by <a href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">Gatsby</a>&nbsp;&nbsp;
-      Copyright ©  2019. All Rights Reserved. <a href="https://yazhen.me" rel="noopener noreferrer" target="_blank" title="王亚振">王亚振</a>
+      Copyright ©  2019. 
+      <br className="footer_br" />
+      All Rights Reserved. <a href="https://yazhen.me" rel="noopener noreferrer" target="_blank" title="王亚振">王亚振</a>
+      {/* 备案号: <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备16008867号</a> */}
       </p>
     </footer>
   )

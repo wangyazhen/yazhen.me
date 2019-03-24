@@ -28,6 +28,7 @@ const Profile = ({ title }) => {
           <dl>网名：drcus | 迪卡丝 | 潜默</dl>
           <dl>职业：Web Enginner</dl>
           <dl>Email：603684240@qq.com</dl>
+          <dl>QQ交流群：975174379</dl>
           {/* <dl>Email：wyzandwqm@gmail.com</dl> */}
           <dl>微信：</dl>
           <dl align="center">
