@@ -7,7 +7,7 @@ class Music extends React.Component {
 
   state = {
     musicUrl: '/images/site-icons/bg.mp3',
-    isPlaying: true,
+    isPlaying: false,
   }
 
   componentDidMount() {
@@ -34,13 +34,13 @@ class Music extends React.Component {
   render() {
     const { isPlaying, musicUrl } = this.state
 
-    // console.log("sss", isPlaying)
+    // console.log("sss", isPlaying) autoPlay
     return (
       <div id="audio-box">
         { !isPlaying && <span className="audio-muted" /> }
         
         <a className="audio-btn" onClick={this.changePlayState} />
-        <audio ref="audio_element" autoPlay controls loop src={musicUrl} />
+        <audio ref="audio_element"  controls loop src={musicUrl} />
       </div>
     )
   }
