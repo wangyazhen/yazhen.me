@@ -1,9 +1,10 @@
+
 export default {
   // Site
-  title: 'Drcus | 迪卡斯',
+  title: 'Drcus | 王亚振',
   subtitle: '坚持做更好的',
-  description: '前端开发者，利用webpack, react来开发web应用',
-  keywords: 'javascript nodeJs react vuejs 前端 git webpack gulp html5 css3 hexo 王亚振 亚振 web开发 web developer',
+  description: '运用js, react等前端技术来开发web应用',
+  keywords: 'javascript nodeJs react reactJs vuejs 前端 git webpack js html5 css3 gatsby 王亚振 web开发 web developer',
   author: '王亚振',
   favicon: '/favicon.ico',
 

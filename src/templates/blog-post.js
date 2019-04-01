@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/layout/SEO"
+import PayBox from "../components/pay"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -10,8 +12,14 @@ export default ({ data }) => {
     // eslint-disable-next-line
     return html.replace(/\<a /g, '<a target="_blank" ')
   }
+  const seoProps = {
+    title: post.frontmatter.title,
+    keywords: post.frontmatter.tags,
+    description: post.html.substr(0, 100).replace(/(<[^>]+>|<[^>]>|<\/[^>]>)/g, '').trim()
+  }
   return (
     <Layout>
+      <SEO {...seoProps} />
       <article className="article">
         <header>
           <h1><Link to={post.fields.path}>{post.frontmatter.title}</Link></h1>
@@ -29,6 +37,7 @@ export default ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: formatContent(post.html) }} />        
         </div>
       </article>
+      <PayBox />
     </Layout>
   )
 }
@@ -38,6 +47,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        tags
         title
         date(
           formatString: "YYYY年MM月DD日"

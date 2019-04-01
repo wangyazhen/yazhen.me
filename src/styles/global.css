@@ -1,8 +1,17 @@
 
 html body {
-  font-family: "Helvetica","Pingfang SC","Hiragino Sans GB","Microsoft YaHei","sans-serif";
+  /* font-family: "Helvetica","Pingfang SC","Hiragino Sans GB","Microsoft YaHei","sans-serif"; */  
   background-color: #ddd;
 }
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+}
+
 .clearfix {clear: both;}
 .clearfix:after {content: '';display: block; clear: both;}
 a {text-decoration: none}
@@ -98,15 +107,34 @@ p.article-author {
   padding-top: 0.1em;
   font-size: 0.9em;
 }
+
+/* 文章详情正文 */
 .article-content {
   padding: 1rem 1.5rem;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 /* formater */
 
 .article-content a  { color: #2ca6cb }
-.article-content p  { color: #817c7c; font-size: 100%; line-height: 1.7; }
+.article-content p  { color: #817c7c; font-size: 100%; line-height: 1.8; }
 .article-content table { width: 100%; font-size: .9rem; }
+
+.pay-box {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #fafafa;
+}
+.pay-btn:hover { opacity: .8; }
+.pay-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #fe6400;
+  color: white;
+  cursor: pointer;  
+  box-shadow: 5px 5px 8px #eee;
+}
 /* 文章详情 end */
 
 /* 布局 */

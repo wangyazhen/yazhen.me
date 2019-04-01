@@ -76,6 +76,7 @@ class SiderBar extends React.Component {
               title: 'Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.', 
               link: 'https://30secondsofcode.org/',
             },
+            { text: '实验楼', title: '实验楼前端频道 ', link: 'https://www.shiyanlou.com/courses/?category=Web%E5%89%8D%E7%AB%AF&course_type=all&tag=all&fee=all' },
           ]}
         />
         
