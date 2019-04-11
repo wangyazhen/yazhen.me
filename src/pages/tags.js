@@ -30,7 +30,7 @@ const TagsPage = ({
       <h2><span role="img">🏷</span> 所有标签</h2>
     </div>
     <div className={styles.gridBox}>
-      {group.map(tag => <TagItem key={tag.fieldValue} tag={tag} />)}
+      {group.filter(tag => !!tag.fieldValue && tag.fieldValue !== "undefined").map(tag => <TagItem key={tag.fieldValue} tag={tag} />)}
     </div>
   </Layout>
 )
