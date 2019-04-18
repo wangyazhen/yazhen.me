@@ -63,15 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-75979033-1",
-        // Puts tracking script in the head instead of the body
-        head: false,
+        trackingId: "UA-75979033-1",        
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ["/preview/**", "/do-not-track/me/too/", "/view"],
         // Enables Google Optimize using your container Id
         optimizeId: "GTM-WLTZNGS",
         // Enables Google Optimize Experiment ID
@@ -79,9 +77,10 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Any additional create only fields (optional)
-        sampleRate: 5,
+        // sampleRate: 5,
+        sampleRate: 100, // all user
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        cookieDomain: "yazhen.me",
       },
     },
   ],
