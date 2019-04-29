@@ -25,7 +25,7 @@ const Profile = ({ title }) => {
       <h3 className={styles.siderTitle}>{title}</h3>
       <div className={styles.siderContent}>
         <dt>
-          <dl>网名：drcus | 迪卡丝 | 潜默</dl>
+          <dl>网名：drcus | 迪卡斯 | 潜默</dl>
           <dl>职业：Web Enginner</dl>
           <dl>Email：603684240@qq.com</dl>
           <dl>QQ交流群：975174379</dl>
@@ -64,6 +64,7 @@ class SiderBar extends React.Component {
             { text: '大咖说', title: '', link: 'http://www.itdks.com/' },
             { text: '网讯博客', title: '', link: 'http://www.wonxun.net/' },
             { text: '如何成功', title: '英文', link: 'http://blog.samaltman.com/how-to-be-successful' },
+            { text: '程序变量取名', title: '取名', link: 'https://unbug.github.io/codelf/' },
           ]}
         />
 
