@@ -11,7 +11,8 @@ export default () => {
       Copyright ©  2019. 
       <br className="footer_br" />
       All Rights Reserved. <a href="https://yazhen.me" rel="noopener noreferrer" target="_blank" title="王亚振">王亚振</a>
-      {/* 备案号: <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备16008867号</a> */}
+      <br className="footer_br" />
+      &nbsp;&nbsp;&nbsp;<a style={{textDecoration: "underline"}} href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备16008867号</a>
       </p>
     </footer>
   )

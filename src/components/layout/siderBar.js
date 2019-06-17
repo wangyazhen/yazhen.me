@@ -1,46 +1,8 @@
 import React from 'react'
-import styles from './layout.module.css'
+import { Bookmark, Profile, HotCard } from './side'
 
-const Bookmark = ({ title, links = [] }) => {
-  return <>
-    <div className={styles.siderItem}>
-      <h3 className={styles.siderTitle}>{title}</h3>
-      <div className={styles.siderContent}>
-        { 
-          links.map(item => <a 
-            key={item.link} 
-            className={styles.slideLink} 
-            href={item.link} rel="friend noopener" 
-            title={item.title || item.text} 
-            target="_blank"
-            >{item.text}</a>) }
-      </div>
-    </div>
-  </>
-}
 
-const Profile = ({ title }) => {
-  return <>
-    <div className={styles.siderItem}>
-      <h3 className={styles.siderTitle}>{title}</h3>
-      <div className={styles.siderContent}>
-        <dt>
-          <dl>网名：drcus | 迪卡斯 | 潜默</dl>
-          <dl>职业：Web Enginner</dl>
-          <dl>Email：603684240@qq.com</dl>
-          <dl>QQ交流群：975174379</dl>
-          {/* <dl>Email：wyzandwqm@gmail.com</dl> */}
-          <dl>微信：</dl>
-          <dl align="center">
-            <img style={{width: '60%'}} src="/images/site-icons/drcus.png" />
-          </dl>
-        </dt>
-      </div>
-    </div>
-  </>
-}
-
-class SiderBar extends React.Component {
+class SideBar extends React.Component {
 
   state = {
     isPlaying: true,
@@ -51,10 +13,11 @@ class SiderBar extends React.Component {
     const { isPlaying, musicUrl } = this.state
 
     return (
-      <div id="sider-bar">
-        <Profile title="我的名片" />
+      <div id="side-bar">
+        <HotCard />
 
-        <Bookmark 
+        <Profile title="我的名片" />
+        <Bookmark
           title="书签"
           links={[
             { text: 'Web前端技能', title: '', link: 'https://www.qdskill.com' },
@@ -86,4 +49,4 @@ class SiderBar extends React.Component {
   }
 }
 
-export default SiderBar
+export default SideBar

@@ -1,0 +1,49 @@
+
+.siderTitle {
+  height: 44px;
+  line-height: 34px;
+  font-weight: 400;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.siderItem {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 5px 8px 10px rgba(0,0,0,.1);
+}
+
+.slideLink {
+  font-size: .8rem;
+  color: #555;
+  display: inline-block;
+  width: 50%;
+  margin: 10px 0;
+}
+.slideLink:hover { color: #2ca6cb; }
+
+/* 今日热榜 */
+.hotLink {
+  color: #1a1a1a;
+  padding-bottom: 8px;
+}
+.title {
+  font-size: 16px;
+}
+.hotLink:hover .title,.hotLink:hover .subTitle {
+  color: #19f;
+  cursor: pointer;
+}
+.subTitle {
+  float: right;
+  font-size: 13px;
+  color: rgba(0,0,0,.54);
+}
+.num {
+  display: inline-block;
+  width: 18px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.num.hot { color: #F1403C }
+
