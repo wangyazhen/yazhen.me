@@ -43,7 +43,7 @@ module.exports.createPages = ({ graphql, actions }) => {
               date(
                 formatString: "YYYY年MM月DD日"
                 locale: "zh-cn"
-              )
+              )              
             }
             fields {
               slug
@@ -98,6 +98,22 @@ module.exports.createPages = ({ graphql, actions }) => {
         component: tagTemplate,
         context: {
           tag,
+        },
+      })
+    })
+
+    // Make archives Pages
+    const archives = []
+    const getDate = d => d.substr(0, d.indexOf("月") +1)
+    const obj = _.groupBy(posts, (v) => getDate(v.node.frontmatter.date))
+    _.mapKeys(obj, (v,k) => archives.push({ month: k, length: v.length }))
+
+    archives.forEach(({ month }) => {
+      createPage({
+        path: `/archives/${_.kebabCase(month.replace(/[\u4e00-\u9fa5]/g, '-'))}/`,
+        component: path.resolve(`./src/templates/archives.js`),
+        context: {
+          month,
         },
       })
     })

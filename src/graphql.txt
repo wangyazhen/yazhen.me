@@ -1,0 +1,20 @@
+{
+  allMarkdownRemark(limit: 5) {
+    group(field: frontmatter___date) {
+      totalCount
+      fieldValue
+      edges {
+        node {
+          frontmatter {
+
+            title
+            date(
+              formatString: "YYYY-MM-DD"
+            )
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -11,6 +11,7 @@ export default {
   menuNavs: [
     {title: '主页', link: '/'},
     {title: '标签', link: '/tags'},
+    {title: '归档', link: '/archives'},
     // {title: '图片', link: '/image-view'},
   ],
   
