@@ -42,6 +42,7 @@ typings/
 # Optional npm cache directory
 .npm
 .idea
+package-lock.json
 
 # Optional eslint cache
 .eslintcache
@@ -68,6 +69,7 @@ static/images/
 
 # Yarn
 yarn-error.log
+yarn.lock
 .pnp/
 .pnp.js
 # Yarn Integrity file
