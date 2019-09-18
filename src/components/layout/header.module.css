@@ -72,8 +72,10 @@
 .searchInput:focus { width: 12rem; }
 
 
-@media only screen and (max-width: 768px) {  
+@media only screen and (max-width: 768px) {
   header nav { display: none; }
+  header .search-li-item { display: none; }
+  header .navbar { display: block; }
   .imglogo {width: 20%;}
   .imglogo img {width: 100%;}
   .textlogo { margin-left: 0 }

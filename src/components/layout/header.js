@@ -17,13 +17,12 @@ export default () => (
         <h2 className="blog-motto">{config.subtitle}</h2>
       </div>
       <div className="navbar">
-        <span className="navbutton navmobile" title="菜单">
-        </span>
+        <span className="navbutton navmobile" title="菜单"></span>
       </div>
       <nav className={styles.nav}>
         <ul>
           {config.menuNavs.map(item => <li key={item.link}><Link to={item.link}>{item.title}</Link></li>)}          
-          <li>
+          <li className="search-li-item">
             <form className="search" action="//google.com/search" method="get" acceptCharset="utf-8">
               <input type="text" className={styles.searchInput} name="q" autoComplete="off" maxLength={20} placeholder="搜索" />
               <input type="hidden" name="q" defaultValue="site:yazhen.me" />

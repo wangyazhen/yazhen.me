@@ -2,9 +2,9 @@
 export default {
   // Site
   title: 'Drcus | 王亚振',
-  subtitle: '坚持做更好的',
+  subtitle: '随便写，记录点东西',
   description: '运用js, react等前端技术来开发web应用',
-  keywords: 'javascript nodeJs react reactJs vuejs 前端 git webpack js html5 css3 gatsby 王亚振 web开发 web developer',
+  keywords: '个人博客 nodeJs react reactJs vuejs 前端 git gatsby 博客 html5 css3 gatsby 王亚振 web开发 web developer',
   author: '王亚振',
   favicon: '/favicon.ico',
 
