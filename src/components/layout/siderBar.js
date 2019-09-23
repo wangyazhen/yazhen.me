@@ -49,11 +49,12 @@ class SideBar extends React.Component {
         />
 
         <Bookmark
-          title="友情链接(别人博客)"
+          title="链接(别人博客)"
           links={[
+            { text: '王垠', title: 'wang', link: 'http://www.yinwang.org/' },
             { text: 'Surmon', title: '司马萌', link: 'https://surmon.me/' },
             { text: '蜗牛老湿', title: '蜗牛老湿', link: 'http://shengxinjing.cn/' },
-            { text: '勇·周', title: '勇·周 ', link: 'http://www.zhouyong123.com' },
+            // { text: '勇·周', title: '勇·周 ', link: 'http://www.zhouyong123.com' },
             { text: '大前端', title: 'da', link: 'http://www.daqianduan.com' },
           ]}
         />

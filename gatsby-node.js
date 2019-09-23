@@ -104,9 +104,13 @@ module.exports.createPages = ({ graphql, actions }) => {
 
     // Make archives Pages
     const archives = []
-    const getDate = d => d.substr(0, d.indexOf("月") +1)
-    const obj = _.groupBy(posts, (v) => getDate(v.node.frontmatter.date))
-    _.mapKeys(obj, (v,k) => archives.push({ month: k, length: v.length }))
+    try {
+      const getDate = d => d.substr(0, d.indexOf("月") +1)
+      const obj = _.groupBy(posts, (v) => getDate(v.node.frontmatter.date))
+      _.mapKeys(obj, (v,k) => archives.push({ month: k, length: v.length }))
+    } catch (e) {
+      console.log('has error*')
+    }
 
     archives.forEach(({ month }) => {
       createPage({

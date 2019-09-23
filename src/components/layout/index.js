@@ -2,6 +2,7 @@ import React from "react"
 import Header from './header'
 import Footer from './footer'
 import SiderBar from './siderBar'
+import { FixedBar } from './side'
 import Helmet from 'react-helmet'
 import config from '../../utils/config'
 
@@ -28,6 +29,7 @@ export default ({ children }) => (<>
 
     <aside className="aside">
       <SiderBar />
+      <FixedBar />
     </aside>
   </div>
   <Footer />

@@ -18,10 +18,36 @@ a {text-decoration: none}
 
 /* ------ */
 
+.fixed-bar {
+ position: fixed;
+ right: 10px;
+ bottom: 12%;
+ width: 40px;
+}
+.back-top {
+  background-color: #f5f5f5;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ada9a9;
+  cursor: pointer;
+}
+.back-top > img{ margin: 0 }
+.back-top.bottom{ transform: rotate(180deg); margin-top: 5px }
+
+
+.header-navbar {
+  position: absolute;
+  right: 20px;
+  padding: 5px 8px;
+  /* background: #e05f5f; */
+  background: #b7b6b6;
+}
+
 #audio-box {
  position: fixed;
  right: 3%;
- bottom: 10%;
+ bottom: 30%;
  width: 50px;
  height: 50px;
 }
@@ -165,7 +191,7 @@ p.article-author {
   footer { padding: 3% 1%; }
   
   .layout { flex-direction: column; }
-  .aside { width: 80%; margin: 2rem auto; }
+  .aside { margin: 2rem auto; }
   
   .footer_br { display: block; }
 }

@@ -30,3 +30,7 @@
   padding: 1rem;
   background: #fafafa;
 }
+
+@media only screen and (max-width: 768px) {
+  .gridBox { grid-template-columns: repeat(2, 1fr); }
+}
