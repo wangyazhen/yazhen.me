@@ -3,14 +3,19 @@ import {Link} from 'gatsby'
 import styles from './header.module.css'
 import Logo from './header_logo.png'
 import Music from './music'
+import TongJi from './tongji'
 import config from '../../utils/config'
 
 
-class Header extends React.PureComponent{
+class Header extends React.PureComponent {
   state = {
     menuActive: false,
-    isMobile: window.screen.width < 768,
+    isMobile: false,
   }
+  componentDidMount() {
+    this.setState({ isMobile: window.screen.width < 768})
+  }
+
   change = () => {
     this.setState({menuActive: !this.state.menuActive})
   }
@@ -31,6 +36,7 @@ const HeaderComponent = ({ menuActive,  isMobile, change}) => (
   <header className={styles.header}>
     <div>
       <Music />
+      <TongJi />
       <div className={styles.imglogo}>
         <Link to="/"><img style={{borderRadius: '50%'}} src={Logo} alt={config.title} title={config.title} /></Link>
       </div>

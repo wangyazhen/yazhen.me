@@ -53,6 +53,8 @@ class SideBar extends React.Component {
           links={[
             { text: '王垠', title: 'wang', link: 'http://www.yinwang.org/' },
             { text: 'Surmon', title: '司马萌', link: 'https://surmon.me/' },
+            { text: '老D博客', title: '老D博客', link: 'https://laod.cn/' },
+            { text: 'yhlben', title: 'yhlben的前端日志', link: 'https://yhlben.github.io/blog/' },
             { text: '蜗牛老湿', title: '蜗牛老湿', link: 'http://shengxinjing.cn/' },
             // { text: '勇·周', title: '勇·周 ', link: 'http://www.zhouyong123.com' },
             { text: '大前端', title: 'da', link: 'http://www.daqianduan.com' },
