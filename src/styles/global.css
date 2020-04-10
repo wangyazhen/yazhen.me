@@ -153,6 +153,17 @@ p.article-author {
   background: #fff5f5;
   padding: .065em .4em;
 }
+
+/*代码滚动条*/
+.article-content  code[class*=language-]::-webkit-scrollbar-thumb { background: hsla(0,0%,100%,.6); border-radius: 5px; height: .424rem }
+.article-content  code[class*=language-]::-webkit-scrollbar { height: .424rem; background-color: #1a1a1a; }
+.article-content .gatsby-highlight code[class*=language-] {
+  width: calc(960px - 2em);
+  overflow: auto;
+  float: left;
+}
+
+
 /* end 文章内容样式 */
 
 /* formater */
