@@ -3,15 +3,7 @@ import { Bookmark, Profile, HotCard } from './side'
 
 
 class SideBar extends React.Component {
-
-  state = {
-    isPlaying: true,
-  }
-
-
   render() {
-    const { isPlaying, musicUrl } = this.state
-
     return (
       <div id="side-bar">
         <HotCard />
@@ -30,6 +22,7 @@ class SideBar extends React.Component {
             { text: '如何成功[英]', title: '英文', link: 'http://blog.samaltman.com/how-to-be-successful' },
             { text: '程序变量取名', title: '取名', link: 'https://unbug.github.io/codelf/' },
             { text: '免费商用字体', title: '字体', link: 'https://www.100font.com/' },
+            { text: '大前端-网址导航', title: '大前端', link: 'http://www.daqianduan.com/nav' },
           ]}
         />
 
@@ -44,20 +37,16 @@ class SideBar extends React.Component {
               title: 'Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.', 
               link: 'https://30secondsofcode.org/',
             },
-            { text: '实验楼', title: '实验楼前端频道 ', link: 'https://www.shiyanlou.com/courses/?category=Web%E5%89%8D%E7%AB%AF&course_type=all&tag=all&fee=all' },
           ]}
         />
 
         <Bookmark
-          title="链接(别人博客)"
+          title="友情链接"
           links={[
-            { text: '王垠', title: 'wang', link: 'http://www.yinwang.org/' },
+            { text: '博客列表', title: '中文独立博客列表', link: 'https://github.com/timqian/chinese-independent-blogs' },
             { text: 'Surmon', title: '司马萌', link: 'https://surmon.me/' },
             { text: '老D博客', title: '老D博客', link: 'https://laod.cn/' },
-            { text: 'yhlben', title: 'yhlben的前端日志', link: 'https://yhlben.github.io/blog/' },
-            { text: '蜗牛老湿', title: '蜗牛老湿', link: 'http://shengxinjing.cn/' },
-            // { text: '勇·周', title: '勇·周 ', link: 'http://www.zhouyong123.com' },
-            { text: '大前端', title: 'da', link: 'http://www.daqianduan.com' },
+            { text: 'LFhacks', title: 'LFhacks', link: 'https://www.lfhacks.com/' },
           ]}
         />
         
