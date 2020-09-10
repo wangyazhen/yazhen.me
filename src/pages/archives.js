@@ -10,11 +10,13 @@ import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 import styles from './tags.module.css'
 
-const Item = ({ item }) => (<section className={styles.itemBox}>
-  <Link to={`/archives/${kebabCase(item.year.replace(/[\u4e00-\u9fa5]/g, '-'))}/`}>
-    <h1>{item.year} ({item.length})</h1>
-  </Link>
-</section>)
+const Item = ({ item }) => (
+  <section className={styles.itemBox}>
+    <Link to={`/archives/${kebabCase(item.year.replace(/[\u4e00-\u9fa5]/g, '-'))}/`}>
+      <h1>{item.year} ({item.length})</h1>
+    </Link>
+  </section>
+)
 
 const Page = ({
   data: {

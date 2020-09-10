@@ -1,10 +1,10 @@
 
-html body {
-  /* font-family: "Helvetica","Pingfang SC","Hiragino Sans GB","Microsoft YaHei","sans-serif"; */  
+html {}
+body {
   background-color: #ddd;
+  font-family: PingFang SC,-apple-system,BlinkMacSystemFont,SegonUI,Roboto,Helvetica Neue,Microsoft YaHei,Arial,sans-serif;
 }
 
-body,
 h1,
 h2,
 h3,
