@@ -6,10 +6,8 @@ import PayBox from "../components/pay"
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  console.log('post', post);
 
   const formatContent = (html) => {
-    // eslint-disable-next-line
     return html.replace(/\<a /g, '<a target="_blank" ')
   }
   const seoProps = {

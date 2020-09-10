@@ -3,15 +3,12 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ArticleList from '../components/articleList'
 
-// import { css } from "@emotion/core"
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
     const { totalPage, currentPage } = this.props.pageContext
 
-    console.log('currentPage ssss', totalPage, currentPage)
     return (
       <Layout>
         <ArticleList articles={posts} />

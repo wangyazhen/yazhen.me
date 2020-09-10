@@ -1,25 +1,22 @@
-import React from "react"
-
-// Components
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styles from '../pages/tags.module.css'
 
-const TagArticleItem = ({ node: { fields: { slug }, frontmatter: { title, date } } }) => (
-<section className={styles.itemBox}>
-  <Link to={slug}>
-    <h1>{title}</h1>
-    <time>{date}</time>
-  </Link>
-</section>)
+const TagArticleItem = ({
+  node: { fields: { slug }, frontmatter: { title, date } }
+}) => (
+  <section className={styles.itemBox}>
+    <Link to={slug}>
+      <h1>{title}</h1>
+      <time>{date}</time>
+    </Link>
+  </section>
+)
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  // const tagHeader = `${totalCount} post${
-  //   totalCount === 1 ? "" : "s"
-  // } tagged with "${tag}"`
-  // const tagHeader = `"${tag}" 标签下有${totalCount}篇文章`
 
   return (
     <Layout>
@@ -35,7 +32,6 @@ const Tags = ({ pageContext, data }) => {
     </Layout>
   )
 }
-
 
 export default Tags
 

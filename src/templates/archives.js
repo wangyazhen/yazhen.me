@@ -1,17 +1,16 @@
 import React from "react"
-
-// Components
 import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 import styles from '../pages/tags.module.css'
 
 const ArticleItem = ({ node: { fields: { slug }, frontmatter: { title, date } } }) => (
-<section className={styles.itemBox}>
-  <Link to={slug}>
-    <h1>{title}</h1>
-    <time>{date}</time>
-  </Link>
-</section>)
+  <section className={styles.itemBox}>
+    <Link to={slug}>
+      <h1>{title}</h1>
+      <time>{date}</time>
+    </Link>
+  </section>
+)
 
 const Page = ({ pageContext, data }) => {
   const { month } = pageContext
@@ -31,7 +30,6 @@ const Page = ({ pageContext, data }) => {
     </Layout>
   )
 }
-
 
 export default Page
 
