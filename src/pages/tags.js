@@ -9,12 +9,13 @@ import { Link, graphql } from "gatsby"
 import Layout from '../components/layout'
 import styles from './tags.module.css'
 
-const TagItem = ({ tag }) => (<section className={styles.itemBox}>
-  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-    <h1>{tag.fieldValue} ({tag.totalCount})</h1>
-    {/* <time>2017年02月13日</time> */}
-  </Link>
-</section>)
+const TagItem = ({ tag }) => (
+  <section className={styles.itemBox}>
+    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+      <h1>{tag.fieldValue} ({tag.totalCount})</h1>
+    </Link>
+  </section>
+)
 
 const TagsPage = ({
   data: {
