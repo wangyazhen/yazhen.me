@@ -17,8 +17,8 @@ class HotCard extends React.Component{
     return <>
       <div className={styles.siderItem}>
         <h3 className={styles.siderTitle}>
-          今日热榜站点
-          <span style={{fontSize: 12, color: '#ddd'}}>(仅作外链使用)</span>
+          需要看会新闻吗
+          {/*<span style={{fontSize: 12, color: '#ddd'}}>(仅作外链使用)</span>*/}
         </h3>
         <div className={styles.siderContent}>
           <ul style={{ listStyle: 'none', margin: 0 }}>

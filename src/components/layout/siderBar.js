@@ -6,7 +6,6 @@ class SideBar extends React.Component {
   render() {
     return (
       <div id="side-bar">
-        <HotCard />
 
         <Profile title="我的名片" />
         <Bookmark
@@ -39,6 +38,8 @@ class SideBar extends React.Component {
             },
           ]}
         />
+
+        <HotCard />
 
         <Bookmark
           title="友情链接"
