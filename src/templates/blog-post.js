@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/layout/SEO"
 import PayBox from "../components/pay"
 
-export default ({ data }) => {
+export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   const formatContent = (html) => {

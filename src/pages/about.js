@@ -2,7 +2,11 @@ import React from "react"
 
 export default () => (
   <div>
-    <h1>About me</h1>
-    <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
+    <h1>关于我</h1>
+    <p>像我这样聪明的人</p>
+    <p>像我这样寻找的人</p>
+    <p>你还见过多少人</p>
+
+    <p>寻找什么，寻找本该灿烂的人生</p>
   </div>
 )
