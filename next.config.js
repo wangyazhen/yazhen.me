@@ -5,7 +5,7 @@ const lessToJS = require('less-vars-to-js')
 
 // 自定义主题
 const themeVariables = lessToJS(
-  fs.readFileSync(path.resolve(__dirname, './components/theme-file.less'), 'utf8')
+  fs.readFileSync(path.resolve(__dirname, './src/components/theme-file.less'), 'utf8')
 )
 
 module.exports = withLess({
