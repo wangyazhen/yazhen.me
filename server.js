@@ -8,6 +8,7 @@ const devProxy = {
     changeOrigin: true
   }
 }; //代理配置
+console.log('代理：', process.env.API_HOST)
 const port = parseInt(process.env.PORT, 10) || 3000;
 const env = process.env.NODE_ENV;
 const dev = env !== "production";
