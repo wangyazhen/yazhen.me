@@ -1,11 +1,11 @@
 
 export default {
   // Site
-  title: 'Drcus | 王亚振',
-  subtitle: '随便写，记录点东西',
+  title: 'Drcus | 迪卡',
+  subtitle: '随写，记录',
   description: '运用js, react等前端技术来开发web应用',
-  keywords: '个人博客 nodeJs react reactJs vuejs 前端 git gatsby 博客 html5 css3 gatsby 王亚振 web开发 web developer',
-  author: '王亚振',
+  keywords: '个人博客 nodeJs react reactJs vueJs 前端 git gatsby 博客 html5 css3 vue3 web开发 developer IT',
+  author: '迪卡',
   favicon: '/favicon.ico',
 
   menuNavs: [

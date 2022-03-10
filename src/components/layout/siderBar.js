@@ -8,7 +8,7 @@ function SideBar() {
 
       <Profile title="我的名片" />
       <Bookmark
-        title="便签"
+        title="书签🔖"
         links={[
           { text: '大前端-网址导航', title: '大前端', link: 'http://www.daqianduan.com/nav' },
           // { text: 'WiKiHow', title: '值得每日一看', link: 'https://zh.wikihow.com/%E9%A6%96%E9%A1%B5' },
