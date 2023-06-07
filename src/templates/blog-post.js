@@ -1,3 +1,10 @@
+/*
+ * @Author: 王亚振
+ * @Date: 2019-02-13 13:49:52
+ * @LastEditors: 王亚振
+ * @LastEditTime: 2023-06-07 15:27:53
+ * @FilePath: /yazhen.me/src/templates/blog-post.js
+ */
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
@@ -21,21 +28,21 @@ export default function BlogPost({ data }) {
       <article className="article">
         <header>
           <h1><Link to={post.fields.path}>{post.frontmatter.title}</Link></h1>
-          <p className="article-author">By  
+          <p className="article-author">By
             <a href="https://yazhen.me" title="王亚振">王亚振</a>
           </p>
           <p className="article-time">
             发布于: <time>{post.frontmatter.date}</time>&nbsp;
             {/* 更新: <time>2019年01月14日</time> */}
           </p>
-          
-          <p className="clearfix"/>
+
+          <p className="clearfix" />
         </header>
         <div className="article-content">
-          <div dangerouslySetInnerHTML={{ __html: formatContent(post.html) }} />        
+          <div dangerouslySetInnerHTML={{ __html: formatContent(post.html) }} />
         </div>
       </article>
-      <PayBox />
+      {/* <PayBox /> */}
     </Layout>
   )
 }

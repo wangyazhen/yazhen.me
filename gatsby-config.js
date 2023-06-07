@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `我是传奇-标题`,
+    title: `我是大振-标题`,
   },
-  plugins: [    
+  plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -63,7 +63,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-75979033-1",        
+        trackingId: "UA-75979033-1",
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
