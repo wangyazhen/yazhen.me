@@ -59,6 +59,7 @@ package-lock.json
 # gatsby files
 .cache/
 public
+public.zip
 
 src/pages/_posts/
 static/images/
